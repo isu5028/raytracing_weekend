@@ -22,6 +22,8 @@ class camera {
         vertical = focus_dist * viewport_height * v;
         lower_left_corner =
             origin - horizontal / 2 - vertical / 2 - focus_dist * w;
+
+        lens_radius = aperture / 2;
     }
 
     ray get_ray(double s, double t) const {
